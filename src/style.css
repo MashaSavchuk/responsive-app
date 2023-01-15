@@ -31,8 +31,9 @@ h1 {
   font-size: 96px;
 }
 
-h2 {
+.introduction-header {
   font-size: 48px;
+  margin-top: 100px;
 }
 
 h3 {
@@ -41,7 +42,6 @@ h3 {
 }
 
 p {
-  /* padding: 20px; */
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
@@ -82,6 +82,10 @@ p {
   margin: 10px;
 }
 
+.about-me-heading {
+  margin-top: 100px;
+}
+
 .email-link {
   display: flex;
   justify-content: center;
@@ -96,7 +100,7 @@ p {
 
 .primary-link {
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 10px 15px;
   text-decoration: none;
   text-transform: capitalize;
   background: var(--primary-color);
@@ -104,6 +108,87 @@ p {
   color: white;
 }
 
+.launch-app-link {
+  margin-top: 30px;
+}
+
 .apps-block {
   margin-top: 45px;
+}
+
+.last-app-block {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .introduction-header {
+    font-size: 30px;
+  }
+
+  h1,
+  .about-me-heading {
+    font-size: 35px;
+  }
+
+  .navigation-links a {
+    font-size: 15px;
+  }
+  .apps-block p {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .primary-link {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  .app-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding-left: 30px;
+  }
+
+  .introduction-header {
+    font-size: 30px;
+  }
+
+  h1,
+  .about-me-heading {
+    font-size: 40px;
+  }
+
+  .navigation-links a {
+    padding: 10px 8px;
+    font-size: 15px;
+  }
+
+  .apps-block h2 {
+    padding-top: 20px;
+  }
+
+  .apps-block img {
+    display: none;
+  }
+
+  .app-info {
+    text-align: center;
+  }
+
+  .launch-app-link {
+    margin-top: 20px;
+  }
+
+  .primary-link {
+    display: block;
+    margin: 0 20px;
+  }
 }
